@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import { getPosts } from '../src/posts'
 import Link from 'next/link'
 import BlogHeader from '../src/components/organisms/BlogHeader'
+import { ThemeProvider } from '@theme-ui/core'
+import theme from '../src/theme'
 
 export async function getStaticProps(context) {
   const posts = await getPosts();
@@ -20,7 +22,7 @@ export async function getStaticProps(context) {
 };
 
 const PostList = (props) => (
-    <div>
+    <ThemeProvider theme={theme}>
       <BlogHeader />
       <ul>
         {props.posts.map(post => (
@@ -31,7 +33,7 @@ const PostList = (props) => (
           </li>
         ))}
       </ul>
-    </div>
+    </ThemeProvider>
 );
 
 export default PostList;
