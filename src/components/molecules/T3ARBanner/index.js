@@ -2,17 +2,20 @@ import T3ARLogo from '../../atoms/T3ARLogo';
 import { Box, Flex } from 'theme-ui';
 
 const LogoContainer = ({ children }) => (
-    <Flex>
-        <Box 
-            sx={{
-                minWidth: '100%',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }}
-        >
-            {children}    
+    <Flex
+        sx={{
+            minWidth: '100%',
+            minHeight: '60vh',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            background: `no-repeat center url(static/img/blog/header.jpg)`,
+            backgroundSize: 'cover'
+        }}
+    >
+        <Box>
+            {children}
         </Box>
-        <Box></Box>
     </Flex>
 );
 
