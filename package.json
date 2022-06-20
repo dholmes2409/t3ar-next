@@ -1,5 +1,6 @@
 {
-  "name": "t3ar-next",
+  "name": "t3ar-blog",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tryghost/content-api": "^1.5.17",
-    "next": "12.0.9",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@tryghost/content-api": "^1.11.0",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
-    "eslint": "8.8.0",
-    "eslint-config-next": "12.0.9"
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6"
   }
 }
