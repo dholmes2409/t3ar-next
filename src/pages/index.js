@@ -1,9 +1,9 @@
-import { getPosts } from "../src/functions";
-import Link from "next/link";
+import { getPosts } from '../functions';
+import Link from 'next/link';
 
-const Index = (props) => (
+const Index = props => (
   <ul>
-    {props.posts.map((post) => (
+    {props.posts.map(post => (
       <li key={post.id}>
         <Link href={`/posts/${post.slug}`}>
           <a>{post.title}</a>

@@ -1,6 +1,6 @@
-import { getSinglePost, getPosts } from "../../src/functions";
+import { getSinglePost, getPosts } from '../../src/functions';
 
-const PostPage = (props) => {
+const PostPage = props => {
   return (
     <div>
       <img src={props.post.feature_image} />
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
   const posts = await getPosts();
 
   // Get the paths we want to create based on posts
-  const paths = posts.map((post) => ({
+  const paths = posts.map(post => ({
     params: { slug: post.slug },
   }));
 

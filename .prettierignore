@@ -1,0 +1,30 @@
+# Image Files
+*.svg
+*.png
+*.jpg
+*.ico
+
+# Unformattable filetypes
+*.csv
+*.ttf
+*.woff
+*.woff2
+*.eot
+*.otf
+*.pdf
+
+# Misc
+.github/
+.idea/
+.vscode/
+build/
+dist/
+node_modules/
+
+.DS_Store
+.editorconfig
+.env
+*file
+*ignore
+package.json
+package-lock.json
